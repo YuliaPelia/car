@@ -1,36 +1,26 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+Project Description: Car Dealer Application
+Overview
+This project serves as a test assessment for creating a car dealer application that implements vehicle filtering by type and model year. The application is developed using Next.js and utilizes Tailwind CSS for styling the interface. Users can select vehicle makes and model years, and view results on a separate page, ensuring convenience and efficiency when interacting with data.
 
-## Getting Started
+Key Features
+Home Page:
 
-First, run the development server:
+Users can choose vehicle makes and model years using dropdown selectors.
+Vehicle makes are fetched through an API call to retrieve available options.
+Year Selection:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+The application provides a list of model years ranging from 2015 to the current year, allowing users to select their desired year.
+Navigation:
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+The "Next" button is enabled only after selecting both vehicle type and model year.
+Upon clicking the button, users are directed to the results page, where vehicle models corresponding to the selected parameters are displayed.
+Results Page:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+The results page displays vehicle models obtained through an API request based on user selections.
+Error handling is implemented to show messages in case of any data fetching issues.
+Technologies
+Next.js: A React framework that enables the easy creation of server-side and static web applications.
+Tailwind CSS: A CSS framework that provides rapid styling for components.
+API Requests: Utilizing external APIs to fetch vehicle data.
+Conclusion
+The car dealer application showcases the capabilities of Next.js in building dynamic web applications with intuitive navigation and efficient data management. This test assessment allows for the demonstration of skills in using modern web technologies and creating a user-friendly interface.
